@@ -1,16 +1,16 @@
 # Workshop - APIs Restful
 Utilize este projeto para aprender o uso de aplicações Restful!
 
-Contexto:
+## Contexto:
 - Aplicação com registro de apontamento de horas.
 - Dentro da aplicação já contem os conectores com o banco de dados.
 
-Objetivos:
+## Objetivos:
 - Rodar o projeto em sua maquina local.
 - Criar APIs de consulta, inserção e exclusão de dados.
 - Criar uma coletanea de chamadas no Postman, contendo as chamadas da API.
 
-APIS sugeridas:
+## APIS sugeridas:
 1. Inclusão de funcionarios
 3. Inclusão de apontamento
 4. Listagem de funcionarios
@@ -19,13 +19,13 @@ APIS sugeridas:
 7. Exclusão de funcionario.
 
 
-Script Database:
+## Script Database:
 
 ```
 -- Database: workshop-apis
---
+
 -- DROP DATABASE "workshop-apis";
---
+
 CREATE DATABASE "workshop-apis"
     WITH 
     OWNER = postgres
