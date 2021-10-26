@@ -27,12 +27,12 @@ namespace Workshop.APIsRestful.Business
             return await _repository.GetAsync(id);
         }
 
-        public async Task<Appointment> Insert(Employee model)
+        public async Task<Appointment> Insert(Appointment model)
         {
             return await _repository.Create(model);
         }
 
-        public async Task Update(Guid id, Employee model)
+        public async Task Update(Guid id, Appointment model)
         {
             model.Id = id;
 
