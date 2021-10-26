@@ -10,6 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Workshop.APIsRestful.Business;
+using Workshop.APIsRestful.Domain.Models;
+using Workshop.APIsRestful.Domain.Repositories;
 
 namespace Workshop.APIsRestful.Web
 {
@@ -26,6 +29,11 @@ namespace Workshop.APIsRestful.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddSingleton(typeof(DatabaseRepository<Appointment>), new DatabaseRepository<Appointment>());
+            services.AddSingleton(typeof(DatabaseRepository<Employee>), new DatabaseRepository<Employee>());
+            services.AddTransient(typeof(EmployeeService));
+            services.AddTransient(typeof(AppointmentService));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

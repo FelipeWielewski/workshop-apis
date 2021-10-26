@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Workshop.APIsRestful.Domain.Models
 {
-    public class Employee : BaseClass
+    public class BaseClass
     {
-        public string Name { get; set; }
-        public DateTime DateOfBirth { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
     }
 }
