@@ -18,3 +18,20 @@ APIS sugeridas:
 6. Exclusão de apontamento
 7. Exclusão de funcionario.
 
+
+Script Database:
+
+```
+-- Database: workshop-apis
+--
+-- DROP DATABASE "workshop-apis";
+--
+CREATE DATABASE "workshop-apis"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Portuguese_Brazil.1252'
+    LC_CTYPE = 'Portuguese_Brazil.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+```
